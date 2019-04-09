@@ -13,6 +13,8 @@ var config = {
 };
 
 firebase.initializeApp(config);
-firebase.firestore().settings({ timestampsInSnapshots: true});
+// was giving an error about the timestampsInSnapshots already being set to true
+//firebase.firestore().settings({ timestampsInSnapshots: true});
+firebase.firestore().settings({});
 
 export default firebase;
